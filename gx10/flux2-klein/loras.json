@@ -1,0 +1,71 @@
+{
+  "_comment": "Curated LoRA registry for the multi-LoRA app. HF repo IDs — pipe.load_lora_weights() resolves them. Edit this file to add/remove LoRAs; the UI reads it at startup. See README for the intentionally-omitted categories.",
+  "loras": [
+    {
+      "name": "Klein-Delight-Style",
+      "repo": "prithivMLmods/Flux.2-Klein-Delight-Style",
+      "weight_file": null,
+      "trigger": "delight style",
+      "default_weight": 0.9,
+      "kind": "style"
+    },
+    {
+      "name": "Klein-Consistency",
+      "repo": "prithivMLmods/Flux.2-Klein-Consistency",
+      "weight_file": null,
+      "trigger": "",
+      "default_weight": 0.7,
+      "kind": "utility"
+    },
+    {
+      "name": "Ultimate Upscaler Klein-9b",
+      "repo": "prithivMLmods/Flux.2-Klein-Ultimate-Upscaler",
+      "weight_file": null,
+      "trigger": "high detail",
+      "default_weight": 0.8,
+      "kind": "upscaler"
+    },
+    {
+      "name": "High Resolution",
+      "repo": "prithivMLmods/Flux.2-Klein-HighRes",
+      "weight_file": null,
+      "trigger": "high resolution, sharp details",
+      "default_weight": 0.8,
+      "kind": "quality"
+    },
+    {
+      "name": "InstaPic",
+      "repo": "prithivMLmods/Flux.2-Klein-InstaPic",
+      "weight_file": null,
+      "trigger": "instagram photo",
+      "default_weight": 0.75,
+      "kind": "style"
+    },
+    {
+      "name": "Controllight",
+      "repo": "fal/flux-2-klein-4B-controllight-lora",
+      "weight_file": null,
+      "trigger": "",
+      "default_weight": 0.85,
+      "kind": "control"
+    },
+    {
+      "name": "RefControl - Depth",
+      "repo": "fal/flux-2-klein-4B-depth-lora",
+      "weight_file": null,
+      "trigger": "",
+      "default_weight": 0.9,
+      "kind": "control",
+      "needs_ref": "depth"
+    },
+    {
+      "name": "RefControl - Pose",
+      "repo": "fal/flux-2-klein-4B-pose-lora",
+      "weight_file": null,
+      "trigger": "",
+      "default_weight": 0.9,
+      "kind": "control",
+      "needs_ref": "pose"
+    }
+  ]
+}
