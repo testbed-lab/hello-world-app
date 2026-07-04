@@ -2,10 +2,11 @@
 
 Two workloads for the ASUS Ascent GX10 (NVIDIA GB10, 128 GB unified memory):
 
-| Directory | What it is |
+| Directory / file | What it is |
 |---|---|
 | `leanstral/` | Download, serve, smoke-test Leanstral 1.5 (Lean 4 theorem prover), plus a comparison harness against your current local model |
 | `flux2-klein/` | Gradio multi-LoRA image app on FLUX.2 Klein (mirror of the HF Multi-LoRA space) |
+| `HF_SHORTLIST.md` | Shortlist of open-weight models & Spaces that actually fit the GX10 — coding, agent, voice, vision, embeddings |
 
 Both assume the stock DGX OS software stack (CUDA, Python 3.10+, `uv` or `pip`).
 
