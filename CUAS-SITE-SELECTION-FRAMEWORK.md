@@ -124,6 +124,29 @@ STOP; Discipline → FIND) while adding the two things doctrine leaves implicit:
 The 401 **Four Ps** (person, platform, process, payload) characterize the threat and
 feed REACH and SURVIVE.
 
+### Relationship to JIATF 401 "Harden, Obscure, Perimeter" (HOP)
+
+The 401 *Guide for Physical Protection of Critical Infrastructure* organizes physical
+protection around **HOP**. This framework does not compete with HOP — it extends it.
+
+| HOP element | Maps to |
+|---|---|
+| **Harden** | SURVIVE (and STOP — netting serves both) |
+| **Obscure** | FIND (terminal-discrimination half) |
+| **Perimeter** | REACH + SEE |
+
+HOP addresses the **Improve** decision only. It does not cover SUSTAIN, does not treat
+the authority gate, and does not address **Select**. Present this framework as extending
+HOP, not as an alternative to it.
+
+**Distinction worth preserving — FIND vs. Obscure:**
+
+- **FIND** — can the adversary locate the site at all?
+- **Obscure** — having located it, can they *identify and acquire the correct asset*?
+
+These are different problems. Obscure is a terminal-phase discrimination problem, and it
+is where decoys, visual clutter, and diversions do their work. Score both.
+
 ---
 
 ## 5. Framework A — Small / urban site
@@ -164,7 +187,7 @@ No universal answer — resolve per site:
 | Axis | What to assess |
 |---|---|
 | **FIND** | **EMCON** — RF, cellular clusters, avoid HF (strong emissions, recognisable signature; if unavoidable, lowest power plus terrain masking) · decoy emitters placed away from the real site in believable configuration · thermal / acoustic / visual · **personnel count — signature scales exponentially with headcount** · vehicle clustering visible from overhead · public information about asset locations |
-| **REACH** | Terrain overmatch — who holds, or could hold, dominating ground · vehicle-accessible launch points inside effective range · dead space and infiltration routes · perimeter standoff tiered by threat class |
+| **REACH** | Terrain overmatch — who holds, or could hold, dominating ground · vehicle-accessible launch points inside effective range · dead space and infiltration routes · perimeter standoff tiered by threat class · **extended perimeter as an active measure** — pushing the fenceline out strains UAS batteries, degrades control links, exposes operators, and widens the safety buffer (four effects from one measure, per 401 HOP) |
 | **SEE** | LOS-driven **Area of Regard** defined before sensor placement · sensor siting vs. terrain masking · **required detection range = threat speed x (kill chain + margin)** |
 | **STOP** | **Layer by cost tier — never trade expensive for cheap.** Passive/nets → EW (RF-linked threats only) → interceptors → guns → HPM for swarms. Kinetic defeat last, per Five Ds. |
 | **SURVIVE** | Hardened and overhead cover · revetments and shelters · dispersion sized to effect radius · separation of like assets · displacement tempo |
@@ -352,6 +375,35 @@ to saturate, clutter radar, and force defenders to expend expensive interceptors
 
 ### 8.8 Infrastructure improvement measures
 
+#### 8.8.1 JIATF 401 "Harden, Obscure, Perimeter" (HOP)
+
+The governing framework from the 401 *Guide for Physical Protection of Critical
+Infrastructure* (30 Jan 2026). Audience: installation commanders, base defenders, local
+law enforcement, interagency partners, security forces. Emphasis throughout is on
+**passive, low-cost measures that do not require procuring exquisite technology.**
+
+| Element | Definition | Measures named |
+|---|---|---|
+| **Harden** | Create physical obstacles to sUAS flight | Concrete walls · hardened roofs · overhead netting · tensioned cables · **closing retractable roofs and covering roof openings where feasible** · wire, mesh, or fishing line · structural shielding |
+| **Obscure** | Reduce what a drone or operator can see and identify | Temporary walls · visual clutter to break up overhead views · decoys · camouflage netting · **diversions to draw attack away from a more important target** |
+| **Perimeter** | Extend security beyond the traditional fenceline | Increased patrols · checkpoints · layered zones · staff training to spot suspicious behavior · **revision of crowd and workforce flow design** |
+
+**The perimeter mechanism — four effects from one measure.** Extending the perimeter is
+not only about earlier detection. It is expected to **strain UAS batteries, degrade
+control links, expose operators, and create a larger safety buffer.** The "expose
+operators" effect is the link to interdiction.
+
+**Framing:** *"Traditional access control models are insufficient against sUAS that
+operate from stand-off distances."* This matches the conclusion reached independently
+from the Spiderweb analysis in §2.
+
+> **Policy context.** This guidance represents a reversal of a prior institutional
+> position — US military officials had for years pushed back on the utility and
+> cost-effectiveness of physical hardening. Useful if hardening is challenged on cost
+> grounds in the room.
+
+#### 8.8.2 Supporting measures
+
 **Overhead cover / hardening**
 - USACE Modular Protective System–Overhead Cover, modified for drone threats — lightweight, rapidly deployable panels rated against small loitering-munition payloads
 - Overhead cover for all above-ground elements, blast entrances, internal segmentation to contain shrapnel
@@ -410,11 +462,13 @@ deny it, or accept being overmatched. There is no fourth option, and "accept" is
 
 ### Not verified — do not brief as settled
 
-- **Neither JIATF 401 publication has been read directly.** All 401 content here derives
-  from secondary reporting. This environment's egress policy blocks `media.defense.gov`,
-  `armypubs.army.mil`, and related hosts. If the 401 *Guide for Physical Protection of
-  Critical Infrastructure* (media.defense.gov, Jan 2026) differs from §8.8, **defer to
-  the source**.
+- **Neither JIATF 401 publication has been read directly.** All 401 content here — the
+  Four Ps, Five Ds, and the HOP framework in §8.8.1 — derives from secondary reporting.
+  This environment's egress policy blocks `media.defense.gov`, `armypubs.army.mil`, and
+  related hosts. The HOP structure and the measures listed under it are corroborated
+  across several independent outlets and are high confidence; **what remains unseen is
+  the guide's internal structure, any specific distances or numeric thresholds, and any
+  assessment checklist or scorecard it may contain.** If the source differs, defer to it.
 - **ATP 3-01.81 has not been read directly** — same cause. §8.9 and passive-defense
   content is from secondary summary.
 - Interceptor cost and success-rate figures (§8.6) are largely **vendor or manufacturer
