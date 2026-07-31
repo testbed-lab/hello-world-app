@@ -222,11 +222,18 @@ flaw. Any of the following disqualifies a site regardless of score:
 
 | Veto | Rationale |
 |---|---|
-| Dominating terrain held by no one and deniable by no one | The Wanat / COP Keating failure mode |
+| **Extensive dead space** that cannot be observed or denied | Wanat / Keating — see §8.11 Pattern D. Note this is *dead space*, not elevation: OP Bari Alai held the summit and was still overrun. |
+| **Mutual support that exists on the site plan but not in current manning** | Camp Bastion — Tower 16 unmanned. See Pattern E. Verify against the manned configuration, not the design. |
+| **Critical dependency sited outside the defensible perimeter** | Khe Sanh water, Wanat fuel, Zerok approach road. See Pattern F. |
 | No egress — single route in and out | Choke point that no concealment fixes |
 | No interior refuge without an exterior wall | No survivable position exists |
 | Sustainment failure inside tolerance window | MLCOA harm is utility loss, not blast |
 | Unacceptable on a **non-drone** hazard (flood, fire, casevac time, civil disorder) | Guards against over-fitting to one threat |
+| **Hardening deferred because occupation is "temporary"** | Pattern A — the most persistent failure in the record, 1879 to 2012. If the plan depends on the site being temporary, the plan is the risk. |
+
+> **Structural note.** The data center industry independently arrives at the same design: hazard and
+> security factors act as **pass/fail screening filters**, while weighted scores are reserved for
+> the primary drivers. Convergence from an unrelated domain is a good signal the veto mechanic is sound.
 
 **3. Re-score on a cadence.** FPV range moved from 5–10 km to 25 km in roughly two
 years; fiber-optic control defeated RF jamming outright. Every score has a shelf life.
@@ -237,6 +244,23 @@ this site non-viable?
 
 **5. "No acceptable site" is a valid output.** Relocation must be an allowed answer,
 not a failure state.
+
+**6. Score the transition, not just the end state.** Pattern H (§8.11): Wanat was attacked
+*during* the repositioning window, while COP Bella was being disestablished and Wanat occupied
+across the same three days. **The move between two adequately-scored sites is itself a period of
+elevated risk** and must be planned as a distinct phase.
+
+### What this framework cannot do
+
+**It cannot detect organizational drift.** Patterns B and E in §8.11 — a forward position
+administratively treated as a rear area, and mutual support that decays as manning thins — are
+failures of the *institution*, not of the site. FSB Mary Ann (1971) and Nahal Oz (2023) were both
+correctly assessed when selected. What decayed was the organization's understanding of what the
+site was.
+
+No site score captures this. It requires a **separate periodic posture review** asking: *does the
+unit still believe this position is what it actually is?* Treat that as a companion process to
+site scoring, not a criterion within it.
 
 ---
 
@@ -456,6 +480,169 @@ some way to ensure that the enemy can't use it against you."*
 This produces the framework's **terrain denial** concept — you either hold the overwatch,
 deny it, or accept being overmatched. There is no fourth option, and "accept" is a veto.
 
+**Correction from wider research (see Pattern D):** elevation is the wrong variable.
+**OP Bari Alai** (Kunar, 1 May 2009) was a fortified *mountaintop* OP and was overrun anyway —
+attackers pinned the defenders with machine-gun fire while others scaled the slopes. The summit
+gave observation; the slopes gave covered approaches. The CSI Wanat study has the correct
+formulation: "surrounded by mountains and low ground, **resulting in extensive dead space**."
+**Score dead space, not height.**
+
+### 8.11 Recurring failure patterns across conflicts
+
+Synthesized across individually-sourced cases. **No published cross-conflict synthesis of outpost
+siting failure appears to exist** — searches for one returned nothing — so this is original
+analysis, not a literature summary. Present it as such.
+
+| # | Pattern | Cases | Strength |
+|---|---|---|---|
+| **A** | **"Temporary" defeats "defensible."** Intent to occupy briefly justifies not hardening; the occupation outlasts the intent. | Isandlwana 1879 · Wanat 2008 · Camp Bastion 2012 | **Strong — spans 3 centuries** |
+| **B** | **Forward position administratively reclassified as rear.** | FSB Mary Ann 1971 · Nahal Oz 2023 | **Strong — near-identical findings 52 years apart** |
+| **C** | **Sited for presence/population against defensibility, without adjusting the force.** | COP Ranch House · Wanat · Keating | Strong |
+| **D** | **High ground necessary but not sufficient.** Dead space, not elevation, is operative. | OP Bari Alai · FSB Ripcord | Moderate |
+| **E** | **Mutual support asserted, not verified.** A property of the manned configuration, not the plan. | Bar-Lev Line · Camp Bastion · Keating | Moderate-strong |
+| **F** | **Critical dependencies sited outside the defensible perimeter.** | Khe Sanh (water) · Wanat (fuel, water) · COP Zerok (single approach road) · Israeli security zone (convoy resupply) | Moderate |
+| **G** | **Outpost creep.** A small position accretes logistics, then protection for the logistics, becoming a target it was not when established. | Israeli security zone in Lebanon | Moderate |
+| **H** | **Predecessor incident treated as an anomaly rather than a class** — and the transition is the danger window. | Ranch House (Aug 2007) → Wanat (Jul 2008), same brigade, same valley system | Moderate |
+
+**Pattern A, the 1879 illustration.** Chelmsford intended Isandlwana as a temporary camp, therefore
+**ordered Pulleine not to entrench** — contrary to standing orders — and refused a request to laager
+the wagons, reportedly saying "It would take a week to make." Wood's troops at Khambula, who did
+fortify with wagon walls and trenches, survived. The identical logic produced uncleared fields of
+fire at Wanat (engineer equipment without fuel) and poppy growing to the fence line at Camp Bastion.
+
+**Pattern B, the two texts side by side.**
+- FSB Mary Ann: *"The soldiers atop the hill had come to regard their outpost as something of a rear
+  echelon area rather than what it actually was — the division's most forward firebase."* No
+  coordinated defense plan existed because no such plans existed. MACV IG traced fault to division
+  command level.
+- Nahal Oz: *"supposed to be a forward base but was treated as a rear outpost amid financial
+  constraints."* Not drilled for attack; defensive positions facing Shuja'iyya empty; watchtowers
+  empty with machine guns locked in storage; one sentry for the entire base. Overrun in under two
+  hours. IDF probe: "the biggest failure" of 7 October.
+
+**Pattern E, best documented.** Camp Bastion, 14/15 Sept 2012 — two independent official
+investigations (UK Defence Committee and USCENTCOM 15-6). Tower selection *was* based on "the
+external terrain and interlocking fields of fire and observation," and manning was rotated
+deliberately to avoid setting a pattern — but only ~50% of towers were manned, and **the tower
+closest to the breach point, Tower 16, was unmanned.** The Defence Committee found this
+"contributed directly to the failure to detect the insurgents at an early stage."
+
+### 8.12 Comparative standoff and siting standards
+
+Useful for framing, but note the critical limitation below.
+
+| Regime | Figure | Basis |
+|---|---|---|
+| **State / SECCA** (diplomatic, overseas) | **100 ft** from property perimeter, or engineering-equivalent blast performance | 22 U.S.C. § 4865 |
+| **DOJ 1995** (federal civilian, post-Oklahoma City) | **100 ft** for new federal field offices | DOJ Vulnerability Assessment |
+| **DoD UFC 4-010-01** | **45 m / 25 m** billeting & primary gathering; **25 m / 10 m** inhabited buildings; **10 m (33 ft)** absolute floor | Graduated by level of protection and construction type |
+| **DHS / ISC** | **No public number** | Criteria in FOUO Design-Basis Threat appendix |
+| **Israel** (shelter access route) | **50 m** default · **70 m** forward settlement · **100–150 m** rear settlement with approval | Civil Defense Regulations 1990 |
+| **FEMA** (community safe room access) | **5 min walk**, or **0.25 mi walking**, or **0.5 mi driving** | FEMA P-361 |
+
+> **⚠️ These are ground-threat and blast numbers. None of them are drone-derived.**
+>
+> UFC standoff rests on an explicit premise: Explosive Weight I is **vehicle-delivered** and there
+> is "high confidence it would be detected during a vehicle search." **A drone flies over the vehicle
+> search.** 45 m of setback that defeats a car bomb does nothing against a Group 1 quadcopter. Do not
+> transfer these figures to the UAS case.
+
+**Two important negatives from the research:**
+
+- **UFC 4-010-01 does not address UAS, drone, or top-attack threats.** Change 3 (24 May 2024)
+  addressed progressive-collapse criteria and relocatable-building thresholds. C-UAS is handled
+  entirely in the operational/policy lane, not the facility-criteria lane. The gap is real.
+- **Israeli building code has not been amended for drones either.** The 2025 change (Amendment 163,
+  mamad 9→12 m²) concerns habitability during prolonged sheltering, not attack geometry. Israel's
+  drone response has been detection, interception, and alerting — not construction.
+
+**Statutory support for our central claim.** The **Secure Embassy Construction and Counterterrorism
+Act of 2022** (S. 4320, in P.L. 117-263) contains a Sense of Congress that setback and co-location
+requirements, even with waivers, *"no longer provide the security such requirements used to provide
+because of advancement in technologies, such as **remote controlled drones, that can evade walls and
+other such static barriers**."* It directs State toward performance-based standards and to keep
+setback "as limited as possible." **If the premise that static standoff is obsolete against drones
+is challenged, this is the citation.**
+
+### 8.13 Israeli protective construction — transferable specifics
+
+**The floor question, resolved.** HFC guidance for buildings *without* a protected space:
+
+> In a building of **more than three floors**, go to the internal stairwell and position yourself
+> where there are **at least two floors above you** — on the stairs, not the landing. All stairwell
+> levels are protected **except the ground floor and the two uppermost floors**. Choose a stairwell
+> with **no windows and no external walls**; position in its middle.
+
+This resolves the framework's floor paradox (§5) by **demanding both** overhead mass and absence of
+apertures, rather than trading one against the other — the stairwell core being the only location in
+a non-mamad building where both are available.
+
+**Warning time drives siting distance, and both are revised as threat geography changes.**
+Representative HFC warning times: Sderot 15 s · Ashkelon 30 s · Haifa/Tiberias 60 s · Tel Aviv 90 s ·
+Eilat ~3 min. When the IDF pushed Hezbollah back from the border, HFC **lengthened** warning times
+across the north (Nahariya 15→30 s; Tel Aviv 90 s→2.5 min). Direct precedent for the re-scoring
+cadence in §7.
+
+**The probabilistic-defense limit — and why it breaks for drones.** A mamad is **not designed to
+survive a direct hit**; it is designed against near-miss blast, fragmentation, and building debris.
+The doctrine rests on the improbability of any specific protected space being hit.
+
+> **That is a statistical argument, not an engineering one. It holds against inaccurate area threats
+> and fails against a precise threat that can choose its aimpoint.** Much borrowed rocket-shelter
+> logic does not survive the transition to drones. Flag this wherever shelter precedent is cited.
+
+**Zero-warning contradiction, unresolved in Israeli code.** The 50–150 m access-route caps assume a
+siren grants 15–90 s to reach shelter. Drones have repeatedly delivered **no warning at all** — a
+strike 70 km from the Lebanese border with no sirens; the September 2025 Eilat drone that evaded
+interception and injured 22. **If warning is zero, distance-to-shelter is irrelevant and only
+in-dwelling protection counts.** No Israeli source resolves this in code terms. This independently
+corroborates the engagement math in §8.3.
+
+**Drone alert doctrine does exist and differs from rocket doctrine.** HFC maintains a separate alert
+category for hostile aerial vehicle intrusion: **do not exit until explicitly instructed** (vs. the
+10-minute rule for rockets); the aircraft **may change course and traverse multiple areas**; **you
+may not hear an explosion** — absence of a detonation does not mean the threat has passed.
+
+**Threat-model failure worth remembering.** Mamad doors were deliberately built **not to lock from
+the inside**, so rescuers could reach incapacitated occupants. On 7 October 2023 attackers exploited
+this — civilians were shot through doors while physically holding the handles shut. The rule has
+since reversed. **A design assumption embedded a threat model that turned out to be wrong.** Audit
+our own assumptions the same way.
+
+**Implementation gap — calibration for any recommendation this framework makes.** Israeli State
+Comptroller, January 2026: **~3.2 million residents (33.6%) lack standard protection**; 14% of
+schools have none; 56% of hospital beds and 41% of operating rooms are unprotected. A mature,
+legally mandated, funded shelter regime is still a third short.
+
+### 8.14 Continuity and redundancy — the FCD 1 principle
+
+**Federal Continuity Directive 1 states no numeric separation distance.** The criteria are:
+- Locations **not affected by the same catastrophic event** driving operations from the primary site
+- Power, telecommunications, and internet **from grids separate from those serving the primary facility**
+- Distinction between **alternate sites** (relocate the staff) and **devolution sites** (geographically
+  separated, *separate staff*, assume the essential functions)
+
+**Hazard independence and infrastructure independence, not mileage.** This is a better formulation
+than a distance and should govern the SUSTAIN axis. Do not assign a mileage figure to continuity
+siting — none exists in the directive.
+
+### 8.15 Survivability vs. effectiveness — the documented cost
+
+The axis doctrine names but does not measure. Now evidenced:
+
+- **GAO-10-767:** State closed public diplomacy facilities and moved others onto secure compounds.
+  *"As a result, the number of visitors to these facilities declined and face-to-face interaction
+  with foreign publics became more difficult."*
+- **GAO-08-162:** at **all 11 posts GAO visited**, site conditions prevented full adherence to
+  security standards. Non-compliance is routine, not exceptional.
+- **OBO conceding the critique:** the 10-acre site requirement "required siting the embassy too far
+  from urban centers where foreign government offices and other embassies are located."
+- **Benghazi ARB:** *"the total elimination of risk is a non-starter for U.S. diplomacy."*
+- **Best Practices Panel:** asked about the Department's risk management process, ambassadors and
+  officers overseas each said **"there is none, and they make it up."**
+
+That last finding is the argument for having a documented framework at all.
+
 ---
 
 ## 9. Open items and confidence
@@ -481,13 +668,57 @@ deny it, or accept being overmatched. There is no fourth option, and "accept" is
 - Legal citations in §3 should be confirmed against current statute and the 6 July 2026
   implementing rule before briefing.
 
+- **§8.11 recurring patterns are original synthesis**, not a literature finding. Searches for a
+  published cross-conflict synthesis of siting failure returned nothing. Each underlying case is
+  individually sourced; the pattern abstraction is ours. Present it that way.
+- **UFC Appendix C Tables C-1 to C-6 cell values were not obtained.** The tables exist at pp. 61–64
+  of the 2018 Change 3 edition. The PDF is public and free at wbdg.org — retrievable on an
+  unrestricted network. Do not fill these in from memory.
+- **UFC explosive weights (kg/lb TNT) are genuinely unobtainable** — FOUO and FOIA-exempt by design,
+  requiring a justified request to the USACE Protective Design Center. Any web source claiming to
+  state them should be treated as suspect.
+- **Authoritative mamad wall-thickness table not obtained.** It is a *table*, not a number — varying
+  by protected-space type, count of exposed faces, and window type — in HFC's Architectural Design
+  Guidance Binder (Sept 2024), Appendix B. Nearly every single-figure thickness claim online is
+  contractor marketing conflating shelter specs with mamad specs. The shelter figures quoted in
+  §8.13 are traceable to the 1990 regulations and are reliable; mamad thicknesses are not.
+- **No public HAS separation distance could be derived.** The design threat is confirmed (direct hit
+  by 500 lb, near-miss by 1,000 lb+, 460 mm concrete); the spacing rule is not public. Do not assert
+  a figure.
+- **No doctrinal Vietnam firebase spacing standard exists.** Spacing was a derived consequence of the
+  105 mm range fan (~11,000 m radius, ~22 km coverage circle) and desired overlap — not a prescribed
+  distance. Do not assert one.
+- **Bar-Lev Line strongpoint spacing figures conflict** across sources (7 miles / 5–10 km / <5 km /
+  5–15 km / <900 m at crossing points). Cite only the qualitative finding — strongpoints "generally
+  not in view of one another and could not offer mutual support" — and the ~16-of-30 manned figure.
+- "100 ft = Inman standards" is the **conventional but legally imprecise** attribution. CRS states the
+  Inman Report specifically did *not* recommend a 100-foot setback or 9-foot walls. **Cite 22 U.S.C.
+  § 4865.**
+
 ### Not yet done
 
 - **Back-test against Keating and Wanat.** Run both frameworks against the two known
   failures. If v3 does not loudly reject both, the veto conditions are wrong. Cheap test,
-  high diagnostic value.
+  high diagnostic value. Note §8.11 has already forced one veto correction (dead space, not
+  elevation), so the test is likely to find more.
 - Interdiction profile (§2) is sketched, not built out.
 - No worked example or filled-in scorecard yet.
+
+### Priority follow-up reads
+
+1. **JMS 2021, "Siting military base camps through an MCDA framework"** — surveyed US Army officers
+   with base camp experience; derived **10 criteria with default weights**, explicitly caveated that
+   they must be tailored via scenario-specific weights and value functions. This is our approach,
+   arrived at independently, and the single most on-target document found. Open access.
+2. **ATP 3-37.10 / MCRP 3-40D.13, *Base Camps*, Table B-2** — "Site selection considerations in
+   relation to mission variables (METT-TC)." The doctrinal checklist. Title confirmed, contents not.
+3. **UFC 4-010-01 (2018 c3), Appendix C** — the standoff tables.
+4. **Corson & Jasperro, "An All-Hazards Approach to US Military Base Camp Site Selection,"**
+   *The Geographical Bulletin* 48(2) — open access. Argues all-hazards should be integral to siting
+   doctrine rather than tactical/logistical criteria dominating. Kosovo case study.
+5. **UFC 4-020-01** — the risk-assessment companion, with worksheet tools already demonstrated as
+   adaptable to non-terrorism hazards.
+6. **JIATF 401 CIP Guide** — for numeric thresholds and any assessment checklist (see above).
 
 ---
 
