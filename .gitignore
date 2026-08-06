@@ -1,0 +1,14 @@
+# Local reference material.
+#
+# cuas/ holds C-UAS reference documents and notes kept on-disk for reading.
+# Source material there is frequently vendor proprietary (marked company
+# confidential, distribution-restricted, or similar), and this repository is
+# public. Keep it untracked so it is never published by an ordinary commit.
+#
+# To version any of it, move it to a PRIVATE repository first.
+cuas/
+
+# Source documents generally: keep them out of the repo regardless of location.
+*.pdf
+*.pptx
+*.key
